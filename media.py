@@ -1,4 +1,5 @@
 
+
 # media.py created November 15, 2016 by Christine Stoner
 
 __copyright__ = """
@@ -30,12 +31,20 @@ import fresh_tomatoes
 # Explictly inherits from object based on google style guide
 
 class Movie(object):
+    """Lists title, poster image, and YouTube url of movies
+
+    Attributes:
+        title: string movie title
+        poster_image_url: jpg reference of movie poster
+        trailer_youtube_url:  url of youtube trailer
+    """
+
     def __init__(self, title, poster_image_url, trailer_youtube_url):
         """Initializes the Movie class.
 
         Args:
             title: string movie title
-            poster_image_url: url of movie poster jpg on wikipedia
+            poster_image_url: jpg reference of movie poster
             trailer_youtube_url: url of youtube movie trailer
         """  
 
